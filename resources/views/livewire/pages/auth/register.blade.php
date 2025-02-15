@@ -10,7 +10,7 @@ use Livewire\Volt\Component;
 
 new #[Layout('layouts.guest')] class extends Component {
     public string $vet_firstName = '';
-    public string $email = '';
+    public string $vet_loginEmail = '';
     public string $password = '';
     public string $password_confirmation = '';
 
@@ -21,7 +21,7 @@ new #[Layout('layouts.guest')] class extends Component {
     {
         $validated = $this->validate([
             'vet_firstName' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
+            'vet_loginEmail' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'string', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -48,9 +48,9 @@ new #[Layout('layouts.guest')] class extends Component {
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input wire:model="email" id="email" class="block mt-1 w-full" type="email" name="email"
-                required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <x-text-input wire:model="vet_loginEmail" id="email" class="block mt-1 w-full" type="email"
+                name="vet_loginEmail" required autocomplete="vet_loginEmail" />
+            <x-input-error :messages="$errors->get('vet_loginEmail')" class="mt-2" />
         </div>
 
         <!-- Password -->
