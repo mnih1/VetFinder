@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('vet_pages', function (Blueprint $table) {
             $table->id('vetpage_ID');
             $table->foreignId('user_id')->references('id')->on('vetLogin');
+            $table->foreignId('adress_ID')->references('adress_ID')->on('adresses');
             $table->string('vetPage_ProfilePicture');
             $table->string('vetPage_Description');
             $table->timestamps();
