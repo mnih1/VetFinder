@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('clinic_name');
             $table->string('clinic_description');
             $table->string('clinic_profilePicture');
+            $table->foreignId('adress_ID')->references('adress_ID')->on('adresses');
             $table->timestamps();
         });
 
