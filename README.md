@@ -1,3 +1,72 @@
+## About the project
+
+[PL] ([EN] - bellow)
+
+# VetFinder
+
+**VetFinder** to aplikacja webowa pomagająca właścicielom zwierząt znaleźć odpowiedniego weterynarza specjalistę. Weterynarze mogą tworzyć swoje profile, aby zaprezentować swoje usługi i zdobyć nowych pacjentów.
+
+## Funkcje:
+
+-   Wyszukiwarka weterynarzy według specjalizacji i lokalizacji
+-   System ocen i recenzji
+-   Profile weterynarzy z danymi kontaktowymi
+-   (Planowana) Funkcja klinik – przegląd klinik, zatrudnionych lekarzy oraz opinii (w fazie koncepcyjnej)
+
+## Technologie:
+
+-   **Backend**: Laravel, Livewire, Redis
+-   **Baza danych**: MySQL + JSON dla przechowywania zdjęć i godzin pracy
+-   **Frontend**: Blade, TailwindCSS
+-   **Inne**: CKEditor, FontAwesome PRO
+
+## Autor
+
+Aplikacja została zaprojektowana i stworzona w 100% przez [mnie ("MNIH")](https://github.com/mnih1). Projekt ma na celu pokazanie moich umiejętności oraz naukę nowych technologii.
+
+## Licencja
+
+Projekt dostępny wyłącznie do celów edukacyjnych i demonstracyjnych. **Zabrania się komercyjnego wykorzystania aplikacji.**
+
+## Kontakt
+
+Jeśli masz uwagi lub pomysły na rozwój aplikacji, zostaw issue na [GitHubie](https://github.com/mnih1/VetFinder/issues).
+
+[EN]
+
+# VetFinder
+
+**VetFinder** is a web application that helps pet owners find the right veterinary specialist. Veterinarians can create their profiles to showcase their services and attract new patients.
+
+## Features:
+
+-   Search for veterinarians by specialization and location
+-   Rating and review system
+-   Veterinarian profiles with contact details
+-   (Planned) Clinics feature – view clinics, their staff, and reviews (still in the concept phase)
+
+## Technologies:
+
+-   **Backend**: Laravel, Livewire, Redis
+-   **Database**: MySQL + JSON for storing images and working hours
+-   **Frontend**: Blade, TailwindCSS
+-   **Other**: CKEditor, FontAwesome PRO
+
+## Author
+
+The application was designed and developed **100% by** [me ("MNIH")](https://github.com/mnih1).  
+The project aims to showcase my skills and help me learn new technologies.
+
+## License
+
+This project is available for educational and demonstration purposes only. **Any commercial use of this application is strictly prohibited.**
+
+## Contact
+
+If you have any suggestions or ideas for improving the application, please open an issue on [GitHub](https://github.com/mnih1/VetFinder/issues).
+
+## Laravel:
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -11,13 +80,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -35,19 +104,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[WebReinvent](https://webreinvent.com/)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+-   **[Jump24](https://jump24.co.uk)**
+-   **[Redberry](https://redberry.international/laravel/)**
+-   **[Active Logic](https://activelogic.com)**
+-   **[byte5](https://byte5.de)**
+-   **[OP.GG](https://op.gg)**
 
 ## Contributing
 
