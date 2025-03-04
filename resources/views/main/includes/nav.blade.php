@@ -2,7 +2,7 @@
 
     <div class="bg-bg w-full h-[50px]"></div>
     <div class="w-full h-[100px] flex items-center justify-between px-16">
-        <h1 class="text-3xl font-extrabold">Vetfinder</h1>
+        <a href="/" class="text-3xl font-extrabold">Vetfinder</a>
         <div class="flex items-center">
             {{-- TODO: Search from - kiedy zrobione będą wyniki i page --}}
             <form class="flex items-center" action="" method="post">
