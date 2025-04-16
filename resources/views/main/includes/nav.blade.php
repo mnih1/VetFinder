@@ -7,12 +7,12 @@
             {{-- TODO: Search from - kiedy zrobione będą wyniki i page --}}
             <form class="flex items-center" action="" method="post">
                 @csrf
-                <input type="text" name="" class="w-[500px] h-[50px] border-none bg-gray-400 text-white placeholder-white" placeholder="Kogo szukasz?">
+                <input type="text" name="" class="w-[500px] h-[50px] border-none bg-gray-500 text-white placeholder-white" placeholder="Kogo szukasz?">
                 <button class="w-[50px] h-[50px] bg-primary text-white text-lg group">
-                    <i class="fa-solid fa-magnifying-glass transform transition-transform duration-200 group-hover:scale-125"></i></button>
+                    <i class="fa-solid fa-magnifying-glass transform transition-transform duration-200 group-hover:scale-125" aria-label="Szukaj"></i></button>
                 </button>
             </form>
-            <button class="w-[50px] h-[50px] bg-secondary text-white text-lg group">
+            <button class="w-[50px] h-[50px] bg-secondary text-white text-lg group" aria-label="menu">
                 <i class="fa-solid fa-bars transform transition-transform duration-200 group-hover:scale-125"></i>
             </button>
             

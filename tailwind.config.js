@@ -12,7 +12,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+                sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 'bg': '#13714C',

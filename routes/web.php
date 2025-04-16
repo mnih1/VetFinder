@@ -4,7 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Models\User;
 
-Route::view('/', 'welcome');
+Route::get('/', function() {
+    $users = User::all();
+    return view('welcome', ['users' => $users]);
+});
 
 // Tymczasowe:
 Route::get('/wyniki-wyszukiwania', function () {

@@ -36,6 +36,12 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function getFullNameAttribute()
+    {
+        return "{$this->vet_firstName} {$this->vet_lastName}";
+    }
+
+
     /**
      * Get the attributes that should be cast.
      *
