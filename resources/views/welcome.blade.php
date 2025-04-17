@@ -28,7 +28,7 @@
                         <p class="text-center">Katowice</p>
                     </div>
                     <a href="#"
-                        class="w-[120px] h-[40px] bg-primary rounded-3xl flex items-center justify-center text-white hover:scale-110 duration-500 ease-out">Więcej</a>
+                        class="w-[120px] h-[40px] bg-bg rounded-3xl flex items-center justify-center text-white hover:scale-110 duration-500 ease-out">Więcej</a>
                 </div>
 
             @endforeach
