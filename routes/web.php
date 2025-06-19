@@ -15,6 +15,10 @@ Route::get('/wyniki-wyszukiwania', function () {
     return view('main.results', ['users' => $users]);
 })->name('results');
 
+Route::get('/vetprofile', function () {
+    return view('main.vetProfile');
+});
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');

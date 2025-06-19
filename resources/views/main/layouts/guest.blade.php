@@ -5,10 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @yield("head")
+    @yield('head')
 
-    <title>@yield("title", 'VetFinder')</title>
-    <meta name="description" content="VetFinder to nowoczesna aplikacja umożliwiająca szybkie i wygodne wyszukiwanie weterynarzy według lokalizacji i specjalizacji. Oceniaj, przeglądaj profile i znajdź najlepszego specjalistę dla swojego pupila.">
+    <title>@yield('title', 'VetFinder')</title>
+
+    {{-- OG TAGS --}}
+    <meta property="og:title" content="@yield('title', 'VetFinder')">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ asset('img/VetFinder-logo-text.png') }}">
+    <meta property="og:description"
+        content="VetFinder to nowoczesna aplikacja umożliwiająca szybkie i wygodne wyszukiwanie weterynarzy według lokalizacji i specjalizacji. Oceniaj, przeglądaj profile i znajdź najlepszego specjalistę dla swojego pupila.">
+
+    <meta name="description"
+        content="VetFinder to nowoczesna aplikacja umożliwiająca szybkie i wygodne wyszukiwanie weterynarzy według lokalizacji i specjalizacji. Oceniaj, przeglądaj profile i znajdź najlepszego specjalistę dla swojego pupila.">
 
     @livewireStyles
 
@@ -22,8 +31,8 @@
 <body class="antialiased font-sans">
     @include('main.includes.nav')
 
-    @yield("content")
-    
+    @yield('content')
+
     @include('main.includes.footer')
     @livewireScripts
 </body>
