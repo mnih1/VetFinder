@@ -7,7 +7,7 @@
         <p>Miastowo, 00-000</p>
         <a href="tel:+00000000000"><i class="fa-solid fa-phone mr-2"></i>+00 000 000 000</a>
         <a href="mailto:contact@vetfinder.pl"><i class="fa-solid fa-envelope mr-2"></i>contact@vetfinder.pl</a>
-        <hr class="w-[500px] h-[2px] bg-primary border-none">
+        <hr class="max-sm:w-[200px] sm:w-[500px] h-[2px] bg-primary border-none">
         <p>Copyright ©2025 | Projekt stworzony przez <a href="https://github.com/mnih1/" target="_blank">Michał “MNIH”
                 Faber</a></p>
     </div>

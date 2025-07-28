@@ -1,4 +1,4 @@
-<div class="w-full px-16 py-7 flex flex-col justify-center gap-4">
+<div class="w-full px-6 sm:px-9 md:px-16 lg:px-28 py-16 flex flex-col justify-center gap-4">
     <h3 class="text-3xl font-bold">Wynik twoich wyszukiwań:</h3>
     <div class="w-full">
         <button class="w-[50px] h-[50px] bg-primary text-white text-lg group md:hidden" onclick="showFilters()"><i
