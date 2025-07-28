@@ -1,10 +1,10 @@
-@extends("main.layouts.guest")
+@extends('main.layouts.guest')
 
-@section("head")
-<link rel="preload" href="{{ asset('img/hero.avif') }}" as="image" type="image/avif" />
+@section('head')
+    <link rel="preload" href="{{ asset('img/hero.avif') }}" as="image" type="image/avif" />
 @endsection
 
-@section("content")
+@section('content')
     <div class="w-full h-[75vh] flex">
         <div class="w-1/2 h-full pl-16 flex items-center">
             <h2 class="text-5xl font-extrabold leading-[55px]">Znajdź najlepszego <br> specjaliste dla <br><span
@@ -16,13 +16,13 @@
     </div>
     <div class="w-full px-16 py-8 flex justify-center items-center gap-10 flex-col">
         <h2 class="text-4xl font-bold">Najwyżej oceniani specjaliści!</h2>
-        <div class="flex justify-between items-center gap-11">
+        <div class="flex justify-around items-center gap-11 flex-wrap">
             {{-- TODO: Gdy będzie system logowania i profili --}}
-            
+
             @foreach ($users->take(4) as $user)
-            
                 <div class="w-[250px] h-[300px] rounded-2xl shadow-2xl flex flex-col justify-around items-center py-3">
-                    <img src="{{ asset('img/noneProfilePic.png') }}" class="w-[100px] h-[100px]" alt="Zdjęcie profiolowe: {{ $user->full_name }}">
+                    <img src="{{ asset('img/noneProfilePic.png') }}" class="w-[100px] h-[100px]"
+                        alt="Zdjęcie profiolowe: {{ $user->full_name }}">
                     <div>
                         <p class="text-lg font-bold">{{ $user->full_name }}</p>
                         <p class="text-center">Katowice</p>
@@ -30,7 +30,6 @@
                     <a href="#"
                         class="w-[120px] h-[40px] bg-bg rounded-3xl flex items-center justify-center text-white hover:scale-110 duration-500 ease-out">Więcej</a>
                 </div>
-
             @endforeach
         </div>
     </div>
