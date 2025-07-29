@@ -4,7 +4,7 @@
     <div class="w-full px-6 sm:px-9 md:px-16 lg:px-28 py-16 flex flex-col">
         <div
             class="w-full flex max-lg:flex-col lg:flex-row justify-between max-lg:items-center lg:items-start max-lg:gap-5 lg:gap-0">
-            <img src="{{ asset('img/noneProfilePic.png') }}" alt=""
+            <img src="{{ asset('img/noneProfilePic.avif') }}" alt=""
                 class="max-md:w-[150px] max-md:h-[150px] md:w-[200px] md:h-[200px]">
             <div class="max-lg:w-full lg:w-fit flex flex-col gap-2 px-5">
                 <h1 class="text-2xl font-extrabold">Imie Nazwisko</h1>

@@ -3,10 +3,10 @@
     <div class="bg-bg w-full h-[50px]"></div>
     <div class="w-full h-[100px] flex items-center justify-between px-4 md:px-16">
         <a href="/" class="h-full text-3xl font-extrabold">
-            <img src="{{ asset('img/VetFinder-logo-text.png') }}"
-                alt="Logo VetFinder" class="h-full hidden md:inline">
-            <img src="{{ asset('img/VetFinder-logo.png') }}"
-                alt="Logo VetFinder" class="h-full inline md:hidden">
+            <img src="{{ asset('img/VetFinder-logo-text.avif') }}"
+                alt="Logo VetFinder" class="h-[100px] hidden md:inline">
+            <img src="{{ asset('img/VetFinder-logo.avif') }}"
+                alt="Logo VetFinder" class="h-[100px] inline md:hidden">
             </a>
         <div class="flex items-center">
             {{-- TODO: Search from - kiedy zrobione będą wyniki i page --}}
