@@ -26,7 +26,7 @@
 
             @foreach ($users->take(4) as $user)
                 <div class="w-[250px] h-[300px] rounded-2xl shadow-2xl flex flex-col justify-around items-center py-3">
-                    <img src="{{ asset('img/noneProfilePic.png') }}" class="w-[100px] h-[100px]"
+                    <img src="{{ asset('img/noneProfilePic.avif') }}" class="w-[100px] h-[100px]"
                         alt="Zdjęcie profiolowe: {{ $user->full_name }}">
                     <div>
                         <p class="text-lg font-bold">{{ $user->full_name }}</p>
