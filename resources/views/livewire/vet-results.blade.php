@@ -25,7 +25,7 @@
     @foreach ($results as $user)
         <div
             class="w-full min-h-[182px] md:h-auto px-8 py-4 bg-red flex gap-5 shadow-md rounded-md flex-col md:flex-row items-center md:items-start">
-            <img src="{{ asset('img/noneProfilePic.png') }}" alt=""
+            <img src="{{ asset('img/noneProfilePic.avif') }}" alt=""
                 class="h-[150px] w-[150px] flex justify-center items-center">
             <div class="h-full w-auto flex justify-between flex-col">
                 <div class="w-full flex flex-col items-center md:items-start gap-2 md:gap-0">
