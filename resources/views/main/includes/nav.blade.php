@@ -1,7 +1,7 @@
-<nav class="w-full h-[150px]">
+<nav class="w-full h-[150px] sticky top-0 z-10">
 
     <div class="bg-bg w-full h-[50px]"></div>
-    <div class="w-full h-[100px] flex items-center justify-between px-4 md:px-16">
+    <div class="w-full h-[100px] flex items-center justify-between px-4 md:px-16 bg-white">
         <a href="/" class="h-full text-3xl font-extrabold">
             <img src="{{ asset('img/VetFinder-logo-text.avif') }}" alt="Logo VetFinder" class="h-[100px] hidden md:inline">
             <img src="{{ asset('img/VetFinder-logo.avif') }}" alt="Logo VetFinder" class="h-[100px] inline md:hidden">
@@ -26,8 +26,7 @@
                 <i class="fa-solid fa-xmark transform transition-transform duration-200 group-hover:scale-125 !hidden"
                     id="xmarkMenu"></i>
             </button>
-            <div class="absolute max-md:w-[60vw] md:w-[400px] md:h-auto bg-bg top-[65px] z-10 right-0 gap-3 flex flex-col text-white py-3 px-6 
-            transform scale-0 opacity-0 pointer-events-none transition-all duration-300 ease-in-out"
+            <div class="absolute max-md:w-[60vw] md:w-[400px] md:h-auto bg-bg top-[75px] z-10 right-0 gap-3 flex flex-col text-white py-3 px-6 transform scale-0 opacity-0 pointer-events-none transition-all duration-300 ease-in-out"
                 id="menu">
                 <ul class="flex flex-col gap-1">
                     <a href="#">
