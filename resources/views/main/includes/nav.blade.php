@@ -19,8 +19,8 @@
                         aria-label="Szukaj"></i></button>
                 </button>
             </form>
-            <button class="w-[50px] h-[50px] bg-secondary text-white text-lg group" aria-label="menu"
-                onclick="showMenu()">
+            <button class="w-[50px] h-[50px] bg-secondary text-white text-lg group flex items-center justify-center" aria-label="menu"
+                onclick="showMenu()" id='menuBtn'>
                 <i class="fa-solid fa-bars transform transition-transform duration-200 group-hover:scale-125"
                     id="barsIcon"></i>
                 <i class="fa-solid fa-xmark transform transition-transform duration-200 group-hover:scale-125 !hidden"
@@ -29,36 +29,38 @@
             <div class="absolute max-md:w-[60vw] md:w-[400px] md:h-auto bg-bg top-[75px] z-10 right-0 gap-3 flex flex-col text-white py-3 px-6 transform scale-0 opacity-0 pointer-events-none transition-all duration-300 ease-in-out"
                 id="menu">
                 <ul class="flex flex-col gap-1">
-                    <a href="#">
-                        <li>O nas</li>
-                    </a>
-                    <a href="#">
-                        <li>Kontakt</li>
-                    </a>
-                    <a href="#">
-                        <li>FAQ</li>
-                    </a>
+                    <li class="w-full h-auto cursor-pointer" onclick="location.href=''">
+                        O nas
+                    </li>
+                    <li class="w-full h-auto cursor-pointer" onclick="location.href=''">
+                        Kontakt
+                    </li>
+                    <li class="w-full h-auto cursor-pointer" onclick="location.href=''">
+                        FAQ
+                    </li>
                 </ul>
                 <h2 class="font-bold text-lg border-b border-b-white">Dla weterynarzy</h2>
                 <ul class="flex flex-col gap-1">
-                    <a href="{{ route('login') }}">
-                        <li class="font-semibold">Zaloguj</li>
-                    </a>
-                    <a href="{{ route('register') }}">
-                        <li class="font-semibold">Zarejestruj</li>
-                    </a>
+                    <li class="font-semibold w-full h-auto cursor-pointer" onclick="location.href='{{ route('login') }}'">
+                            Zaloguj
+                    </li>
+                    <li class="font-semibold w-full h-auto cursor-pointer" onclick="location.href='{{ route('register') }}'">
+                        Zarejestruj
+                    </li>
                 </ul>
                 <h2 class="font-bold text-lg border-b border-b-white">Dla Klinik</h2>
                 <ul class="flex flex-col gap-1">
-                    <a href="#">
-                        <li>Co oferujemy</li>
-                    </a>
-                    <a href="{{ route('login') }}">
-                        <li class="font-semibold">Zaloguj</li>
-                    </a>
-                    <a href="{{ route('register') }}">
-                        <li class="font-semibold">Zarejestruj</li>
-                    </a>
+                    <li class="w-full h-auto cursor-pointer" onclick="location.href=''">
+                        Co oferujemy
+                    </li>
+                    <li class="font-semibold w-full h-full cursor-pointer" onclick="location.href='{{ route('login') }}'">
+                        Zaloguj
+                    </li>
+                    <li class="font-semibold w-full h-full cursor-pointer" onclick="location.href='{{ route('register') }}'">
+                        <a href="{{ route('register') }}">
+                            Zarejestruj
+                        </a>
+                    </li>
                 </ul>
             </div>
 

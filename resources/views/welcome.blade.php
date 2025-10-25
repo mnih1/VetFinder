@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="w-full h-[75vh] flex">
-        {{-- FIXME: sprowadzić do jednego diva --}}
+        {{-- FIXME: sprowadzić do jednego diva / zwiększyć wydajność--}}
         <div class="max-lg:hidden max-lg:w-full lg:w-1/2 h-full pl-16 flex items-center">
             <h2 class="text-5xl font-extrabold leading-[55px]">Znajdź najlepszego <br> specjaliste dla <br><span
                     class="text-primary">swojego zwierzaka!</span></h2>

@@ -36,6 +36,7 @@
             <div class="bg-gray-200 w-[300px] h-[300px]"></div>
         </div>
         <div class="w-full min-h-[350px] flex max-md:flex-col max-md:items-center justify-center gap-4">
+            {{-- TODO: DO WYMIANY... tylko adress bez mapy (geocoding) --}}
             <div class="max-md:w-auto md:w-1/3 h-full flex">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.3993403521793!2d18.99695207150063!3d50.24456720896524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce5e49d5e0eb%3A0x5ad03f8a8f76cf2!2zWmVzcMOzxYIgU3prw7PFgiBUZWNobmljem55Y2ggaSBPZ8OzbG5va3N6dGHFgmPEhWN5Y2ggTnIgMg!5e0!3m2!1spl!2spl!4v1745561652285!5m2!1spl!2spl"
