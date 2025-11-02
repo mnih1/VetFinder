@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clippath{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 0);
+}
+
+@media (max-width: 1024px){
+    .clippath{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+}

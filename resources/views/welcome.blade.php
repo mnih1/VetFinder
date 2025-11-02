@@ -5,9 +5,9 @@
 @endsection
 
 @section('content')
-    <div class="w-full h-[75vh] flex">
-        {{-- FIXME: sprowadzić do jednego diva / zwiększyć wydajność--}}
-        <div class="max-lg:hidden max-lg:w-full lg:w-1/2 h-full pl-16 flex items-center">
+    <div class="w-full h-[75vh] flex items-center justify-between ">
+        {{-- FIXME: sprowadzić do jednego diva / zwiększyć wydajność --}}
+        {{-- <div class="max-lg:hidden max-lg:w-full lg:w-1/2 h-full pl-16 flex items-center">
             <h2 class="text-5xl font-extrabold leading-[55px]">Znajdź najlepszego <br> specjaliste dla <br><span
                     class="text-primary">swojego zwierzaka!</span></h2>
         </div>
@@ -18,7 +18,14 @@
             style="background-image: url('{{ asset('img/hero.avif') }}');">
             <h2 class="text-5xl font-extrabold text-center leading-[55px] text-white">Znajdź najlepszego <br>
                 specjaliste dla <br><span class="text-secondary">swojego zwierzaka!</span></h2>
+        </div> --}}
+        <div class="max-lg:absolute lg:static z-10 max-lg:flex max-lg:items-center max-lg:justify-center">
+            <h2 class="max-lg:text-white max-lg:items-center text-5xl font-extrabold leading-[55px] pl-16 relative">
+                Znajdź najlepszego <br> specjaliste dla
+                <br><span class="text-primary">swojego zwierzaka!</span>
+            </h2>
         </div>
+        <img src="{{ asset('img/hero.avif') }}" alt="hero photo" class="h-full max-lg:w-full lg:w-1/2 object-cover clippath">
     </div>
     <div class="w-full px-16 py-8 flex justify-center items-center gap-10 flex-col">
         <h2 class="text-4xl font-bold">Najwyżej oceniani specjaliści!</h2>
