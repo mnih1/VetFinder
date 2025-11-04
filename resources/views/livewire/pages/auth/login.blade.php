@@ -31,10 +31,10 @@ new #[Layout('layouts.guest')] class extends Component {
         <h3 class="my-5 text-center font-extrabold text-2xl">Zaloguj</h3>
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input wire:model="form.email" id="email" class="block mt-1 w-full" type="email" name="email"
-                required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('form.email')" class="mt-2" />
+            <x-input-label for="vet_loginEmail" :value="__('Email')" />
+            <x-text-input wire:model="form.vet_loginEmail" id="vet_loginEmail" class="block mt-1 w-full" type="email"
+                name="vet_loginEmail" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('form.vet_loginEmail')" class="mt-2" />
         </div>
 
         <!-- Password -->
