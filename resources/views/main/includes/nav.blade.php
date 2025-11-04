@@ -19,8 +19,8 @@
                         aria-label="Szukaj"></i></button>
                 </button>
             </form>
-            <button class="w-[50px] h-[50px] bg-secondary text-white text-lg group flex items-center justify-center" aria-label="menu"
-                onclick="showMenu()" id='menuBtn'>
+            <button class="w-[50px] h-[50px] bg-secondary text-white text-lg group flex items-center justify-center"
+                aria-label="menu" onclick="showMenu()" id='menuBtn'>
                 <i class="fa-solid fa-bars transform transition-transform duration-200 group-hover:scale-125"
                     id="barsIcon"></i>
                 <i class="fa-solid fa-xmark transform transition-transform duration-200 group-hover:scale-125 !hidden"
@@ -41,10 +41,12 @@
                 </ul>
                 <h2 class="font-bold text-lg border-b border-b-white">Dla weterynarzy</h2>
                 <ul class="flex flex-col gap-1">
-                    <li class="font-semibold w-full h-auto cursor-pointer" onclick="location.href='{{ route('login') }}'">
-                            Zaloguj
+                    <li class="font-semibold w-full h-auto cursor-pointer"
+                        onclick="location.href='{{ route('login') }}'">
+                        Zaloguj
                     </li>
-                    <li class="font-semibold w-full h-auto cursor-pointer" onclick="location.href='{{ route('register') }}'">
+                    <li class="font-semibold w-full h-auto cursor-pointer"
+                        onclick="location.href='{{ route('register') }}'">
                         Zarejestruj
                     </li>
                 </ul>
@@ -53,10 +55,12 @@
                     <li class="w-full h-auto cursor-pointer" onclick="location.href=''">
                         Co oferujemy
                     </li>
-                    <li class="font-semibold w-full h-full cursor-pointer" onclick="location.href='{{ route('login') }}'">
+                    <li class="font-semibold w-full h-full cursor-pointer"
+                        onclick="location.href='{{ route('login') }}'">
                         Zaloguj
                     </li>
-                    <li class="font-semibold w-full h-full cursor-pointer" onclick="location.href='{{ route('register') }}'">
+                    <li class="font-semibold w-full h-full cursor-pointer"
+                        onclick="location.href='{{ route('register') }}'">
                         <a href="{{ route('register') }}">
                             Zarejestruj
                         </a>
