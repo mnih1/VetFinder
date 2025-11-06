@@ -1,3 +1,5 @@
+import './bootstrap';
+
 function toggleMenu(e) {
     const menu = document.getElementById('menu');
     const barsIcon = document.getElementById('barsIcon');

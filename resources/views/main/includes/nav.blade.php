@@ -1,5 +1,5 @@
 <nav class="w-full h-[150px] sticky top-0 z-10">
-
+    {{-- TODO: Oliwier kazał nie zoom tylko fade z góry na dół --}}
     <div class="bg-bg w-full h-[50px]"></div>
     <div class="w-full h-[100px] flex items-center justify-between px-4 md:px-16 bg-white">
         <a href="/" class="h-full text-3xl font-extrabold">

@@ -25,7 +25,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('miniLogo.png') }}">
 
     <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/mainNav.js'])
 </head>
 
 <body class="antialiased font-sans">

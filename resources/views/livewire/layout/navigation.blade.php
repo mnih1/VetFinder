@@ -20,7 +20,7 @@ new class extends Component {
         <div class="flex flex-col text-center text-3xl/6 font-bold text-white">
             VetFinder <span class="text-sm font-extralight text-right">dashboard</span>
         </div>
-        <button onclick="dashboardBtn()"
+        <button id="dashboardBtn"
             class="absolute w-[30px] h-[30px] bg-secondary flex items-center justify-center right-[-25px] rounded-full cursor-pointer">
             <i id="arrow" class="fa-duotone fa-solid fa-arrow-right transition-transform duration-300"
                 style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
