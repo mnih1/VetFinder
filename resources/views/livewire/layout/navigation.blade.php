@@ -15,37 +15,43 @@ new class extends Component {
     }
 }; ?>
 
-<nav class="md:w-[250px] h-screen bg-bg sticky flex flex-col  px-3 py-6 ">
+<nav x-data="{ open: true }" :class="open ? 'md:w-[250px]' : 'md:w-[100px]'"
+    class="h-screen bg-bg sticky flex flex-col  px-3 py-6 transition-all duration-500">
     <div class="h-1/2 relative flex items-center justify-between flex-col">
-        <div class="flex flex-col text-center text-3xl/6 font-bold text-white">
+        <h1 x-show="open" class="flex flex-col text-center text-3xl/6 font-bold text-white">
             VetFinder <span class="text-sm font-extralight text-right">dashboard</span>
-        </div>
-        <button id="dashboardBtn"
-            class="absolute w-[30px] h-[30px] bg-secondary flex items-center justify-center right-[-25px] rounded-full cursor-pointer">
-            <i id="arrow" class="fa-duotone fa-solid fa-arrow-right transition-transform duration-300"
+        </h1>
+        <h1 x-show="!open" class="flex flex-col text-center text-3xl/6 font-bold text-white">
+            VF
+        </h1>
+        <button @click="open = !open"
+            class="absolute w-[30px] h-[30px] bg-secondary flex items-center justify-center right-[-25px] rounded-full cursor-pointer transition-transform duration-600">
+            <i :class="open ? 'rotate-0' : 'rotate-180'"
+                class="fa-duotone fa-solid fa-arrow-right transition-transform duration-600"
                 style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
         </button>
+
 
         <ul class="flex flex-col gap-4 text-white text-lg font-medium">
             <li onclick="location.href=''" class="cursor-pointer">
                 <i class="fa-duotone fa-solid fa-id-card fa-xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                <span>Profil</span>
+                <span x-show="open" x-transition.opacity.duration.300ms>Profil</span>
             </li>
             <li onclick="location.href=''" class="cursor-pointer">
                 <i class="fa-solid fa-phone fa-xl" style="color: #ffffff;">
                 </i>
-                <span>Kontakt</span>
+                <span x-show="open" x-transition.opacity.duration.300ms>Kontakt</span>
             </li>
             <li onclick="location.href=''" class="cursor-pointer">
                 <i class="fa-duotone fa-solid fa-user fa-xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                <span>Konto</span>
+                <span x-show="open" x-transition.opacity.duration.300ms>Konto</span>
             </li>
             <li onclick="location.href=''" class="relative cursor-pointer">
                 <i class="fa-duotone fa-solid fa-house-medical fa-xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                <span>Klinika</span>
+                <span x-show="open" x-transition.opacity.duration.300ms>Klinika</span>
                 <div
                     class="w-[18px] h-[18px] rounded-full bg-secondary absolute top-0 flex items-center justify-center">
                     <i class="fa-solid fa-trophy fa-2xs"></i>
@@ -55,16 +61,16 @@ new class extends Component {
     </div>
     <div class="h-1/2 relative flex items-center justify-end flex-col">
         <ul class="flex flex-col gap-4 text-white text-lg font-medium">
-            <li onclick="location.href=''" class="cursor-pointer">
+            <li wire:click="logout" class="cursor-pointer">
                 <i class="fa-duotone fa-solid fa-right-from-bracket fa-2xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                Wyloguj
+                <span x-show="open" x-transition.opacity.duration.300ms>Wyloguj</span>
             </li>
             <li onclick="location.href=''" class="cursor-pointer">
                 <i class="fa-duotone fa-solid fa-square-question fa-2xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
                 </i>
-                Pomoc
+                <span x-show="open" x-transition.opacity.duration.300ms>Pomoc</span>
             </li>
         </ul>
     </div>
