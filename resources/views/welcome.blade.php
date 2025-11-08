@@ -20,10 +20,10 @@
                 specjaliste dla <br><span class="text-secondary">swojego zwierzaka!</span></h2>
         </div> --}}
         <div class="max-lg:absolute lg:static z-10 max-lg:flex max-lg:items-center max-lg:justify-center">
-            <h2 class="max-lg:text-white max-lg:items-center text-5xl font-extrabold leading-[55px] pl-16 relative">
+            <h1 class="max-lg:text-white max-lg:items-center text-5xl z-10 font-extrabold leading-[55px] pl-16 relative">
                 Znajdź najlepszego <br> specjaliste dla
                 <br><span class="text-primary">swojego zwierzaka!</span>
-            </h2>
+            </h1>
         </div>
         <img src="{{ asset('img/hero.avif') }}" alt="hero photo" class="h-full max-lg:w-full lg:w-1/2 object-cover clippath">
     </div>
