@@ -34,34 +34,39 @@ new class extends Component {
         </button>
 
 
-        <ul class="flex flex-col gap-4 text-white text-lg font-medium">
-            <li>
+        <ul class="flex flex-col gap-2 text-white text-lg font-medium">
+            <li class="h-8">
+                <a href="{{ route('dashboard') }}" wire:navigate>
+                    <i class="fa-duotone fa-solid fa-house fa-xl"
+                        style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
+                    <span x-show="open">Dashboard</span>
+                </a>
+            </li>
+            <li class="h-8">
                 <a href="{{ route('dashboardProfile') }}" wire:navigate>
                     <i class="fa-duotone fa-solid fa-id-card fa-xl"
                         style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                    <span x-show="open" x-transition.opacity.duration.300ms>Profil</span>
+                    <span x-show="open">Profil</span>
                 </a>
             </li>
-            <li>
-                <a href="{{ route('dashboardContact') }}" wire:navigate class="flex items-center gap-2 text-white">
+            <li class="h-8">
+                <a href="{{ route('dashboardContact') }}" wire:navigate>
                     <i class="fa-solid fa-phone fa-xl"></i>
-                    <span x-show="open" x-transition.opacity.duration.300ms>Kontakt</span>
+                    <span x-show="open">Kontakt</span>
                 </a>
             </li>
-
-
-            <li>
+            <li class="h-8">
                 <a href="{{ route('dashboardAccont') }}" wire:navigate>
                     <i class="fa-duotone fa-solid fa-user fa-xl"
                         style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                    <span x-show="open" x-transition.opacity.duration.300ms>Konto</span>
+                    <span x-show="open">Konto</span>
                 </a>
             </li>
-            <li class="relative cursor-pointer">
+            <li class="relative cursor-pointer h-8">
                 <a href="{{ route('dashboardClinic') }}" wire:navigate>
                     <i class="fa-duotone fa-solid fa-house-medical fa-xl"
                         style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                    <span x-show="open" x-transition.opacity.duration.300ms>Klinika</span>
+                    <span x-show="open">Klinika</span>
                 </a>
                 <div
                     class="w-[18px] h-[18px] rounded-full bg-secondary absolute top-0 flex items-center justify-center">
@@ -75,13 +80,13 @@ new class extends Component {
             <li wire:click="logout" class="cursor-pointer">
                 <i class="fa-duotone fa-solid fa-right-from-bracket fa-2xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
-                <span x-show="open" x-transition.opacity.duration.300ms>Wyloguj</span>
+                <span x-show="open">Wyloguj</span>
             </li>
             <li onclick="location.href=''" class="cursor-pointer">
                 <i class="fa-duotone fa-solid fa-square-question fa-2xl"
                     style="--fa-primary-color: #caf0fe; --fa-secondary-color: #ffffff;"></i>
                 </i>
-                <span x-show="open" x-transition.opacity.duration.300ms>Pomoc</span>
+                <span x-show="open">Pomoc</span>
             </li>
         </ul>
     </div>
