@@ -18,4 +18,18 @@
             </div>
         </div>
     </div>
+    <div class="flex w-full flex-col items-center gap-4">
+        <h2 class="text-center font-bold text-xl w-full">Twój profil</h2>
+        <div class="py-8 px-14 bg-lighttext flex gap-7 rounded-md">
+            <img src="{{ asset('img/noneProfilePic.avif') }}" alt="Zdjęcie profilowe">
+            <div class="flex flex-col">
+                <p>Imie i Nazwisko: {{ auth()->user()->vet_firstName . " " . auth()->user()->vet_lastName }}</p>
+                <p>Kontakt:</p>
+                <p><i class="fa-solid fa-envelope"></i> email: {email}</p>
+                <p><i class="fa-solid fa-phone"></i> tel: {numer telefonu}</p>
+                <p>Ilość opinii: {ilość opini}</p>
+                <p>Średnia opinia: {średnia opinia w gwiazdkach}{średnia opinia w liczbie}</p>
+            </div>
+        </div>
+    </div>
 </div>
