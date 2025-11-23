@@ -16,7 +16,7 @@ new class extends Component {
 }; ?>
 
 <nav x-data="{ open: true }" :class="open ? 'md:w-[250px]' : 'md:w-[100px]'"
-    class="h-screen bg-bg sticky flex flex-col  px-3 py-6 transition-all duration-500">
+    class="h-screen bg-bg flex flex-col  px-3 py-6 transition-all duration-500 sticky top-0 left-0">
     <div class="h-1/2 relative flex items-center justify-between flex-col">
         <a href="{{ route('dashboard') }}" wire:navigate>
             <h1 x-show="open" class="flex flex-col text-center text-3xl/6 font-bold text-white">

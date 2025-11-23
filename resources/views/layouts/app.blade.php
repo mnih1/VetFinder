@@ -18,7 +18,7 @@
     <div class="min-h-screen bg-gray-100 flex">
         <livewire:layout.navigation />
 
-        <main class="w-full min-h-screen py-4 px-6">
+        <main class="w-full min-h-screen py-4 px-6 scrol">
             {{ $slot }}
         </main>
     </div>
