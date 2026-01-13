@@ -1,4 +1,4 @@
-<div class="flex gap-5 flex-col w-full h-full">
+<div class="flex gap-5 flex-col w-full h-auto snap-y">
     <h1 class="font-extrabold text-3xl">Cześć, {{ auth()->user()->vet_firstName }}!</h1>
 
     <div class="flex w-full flex-col gap-4">
@@ -32,16 +32,44 @@
             </div>
         </div>
     </div>
-    <div class="flex w-full flex-col gap-4">
+    <div class="flex w-full h-auto flex-col gap-4">
         <h2 class="text-center font-bold text-xl w-full">Ostatnie opinie</h2>
-        <div class="w-full flex justify-around gap-4">
+        <div class="w-full flex justify-around flex-wrap gap-4">
             <div class="w-80 h-60 flex flex-col gap-2 items-center">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse aperiam dolorum dolor autem
                     tempora sunt est cum. Impedit quia voluptatum, officia fugit doloremque porro pariatur, obcaecati at
-                    accusamus optio eligendi cupiditate! Quidem a reprehenderit, nisi soluta doloremque odit adipisci
-                    repellendus eveniet impedit corrupti quasi magni, earum veritatis atque sit accusantium expedita,
-                    totam itaque officia qui? Repellendus natus deleniti suscipit!
+                    accusamus optio eligendi cupiditate!
+                </p>
+                <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <h3 class="font-bold">Autor</h3>
+            </div>
+            <div class="w-80 h-60 flex flex-col gap-2 items-center">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse aperiam dolorum dolor autem
+                    tempora sunt est cum. Impedit quia voluptatum, officia fugit doloremque porro pariatur, obcaecati at
+                    accusamus optio eligendi cupiditate!
+                </p>
+                <div class="flex gap-1">
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                    <i class="fa-solid fa-star text-secondary"></i>
+                </div>
+                <h3 class="font-bold">Autor</h3>
+            </div>
+            <div class="w-80 h-60 flex flex-col gap-2 items-center">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse aperiam dolorum dolor autem
+                    tempora sunt est cum. Impedit quia voluptatum, officia fugit doloremque porro pariatur, obcaecati at
+                    accusamus optio eligendi cupiditate!
                 </p>
                 <div class="flex gap-1">
                     <i class="fa-solid fa-star text-secondary"></i>

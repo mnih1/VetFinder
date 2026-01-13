@@ -15,10 +15,10 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100 flex">
+    <div class="bg-gray-100 flex">
         <livewire:layout.navigation />
 
-        <main class="w-full min-h-screen py-4 px-6 scrol">
+        <main class="w-full h-auto py-4 px-6">
             {{ $slot }}
         </main>
     </div>
